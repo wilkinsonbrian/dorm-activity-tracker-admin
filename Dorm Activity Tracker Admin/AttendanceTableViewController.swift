@@ -50,17 +50,25 @@ class AttendanceTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("studentAttendance", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = students[indexPath.row]
-        let parameters = ["where": "fullName='\(students[indexPath.row])'"]
-        Student.getObjectsWithParams(parameters, {(student: [AnyObject]!, error:NSError!) -> () in
-            var studentRecord = student[0] as Student
-            var activityInformation: String = self.activity.name + "-" + self.activity.eventDate
-            for activityAttended in studentRecord.activities {
-                if activityInformation == activityAttended {
+        
+        var currentStudent: Student!
+        var currentActivityID = activity.objectId
+        
+        Student.getObjectWithId(self.students[indexPath.row], {(student:AnyObject!, error:NSError!) -> () in
+            if error == nil {
+                currentStudent = student as Student
+                cell.textLabel?.text = currentStudent.fullName
+            } else {
+                cell.textLabel?.text = "Can't retrieve student information"
+            }
+            
+            for activityAttended in currentStudent.activities {
+                if currentActivityID == activityAttended {
                     cell.accessoryType = UITableViewCellAccessoryType.Checkmark
                 }
             }
         })
+    
         return cell
     }
     
@@ -81,8 +89,7 @@ class AttendanceTableViewController: UITableViewController {
                 cell.accessoryType = UITableViewCellAccessoryType.None
                 
             } else {
-                var activityInformation: String = self.activity.name + "-" + self.activity.eventDate
-                currentUserActvityList.append(activityInformation)
+                currentUserActvityList.append(self.activity.objectId)
                 cell.accessoryType = UITableViewCellAccessoryType.Checkmark
             }
             

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>80CE5279-10BF-419D-8BBC-0F5E88C06BB6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Dorm Activity Tracker Admin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AECD2480927A096B685373189BF6910897BE5860</key>
+		<string>https://github.com/wilkinsonbrian/dorm-activity-tracker-admin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Dorm Activity Tracker Admin.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AECD2480927A096B685373189BF6910897BE5860</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wilkinsonbrian/dorm-activity-tracker-admin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AECD2480927A096B685373189BF6910897BE5860</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AECD2480927A096B685373189BF6910897BE5860</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Dorm%20Activity%20Tracker%20Admin</string>
+		</dict>
+	</array>
+</dict>
+</plist>

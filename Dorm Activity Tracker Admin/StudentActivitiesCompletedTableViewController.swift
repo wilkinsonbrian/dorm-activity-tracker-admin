@@ -44,7 +44,16 @@ class StudentActivitiesCompletedTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("showStudentActivities", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = self.studentActvities[indexPath.row]
+        Activity.getObjectWithId(self.studentActvities[indexPath.row], {(activity:AnyObject!, error:NSError!) -> () in
+            if error == nil {
+                var currentActivity = activity as Activity
+                cell.textLabel?.text = currentActivity.name
+                cell.detailTextLabel?.text = currentActivity.eventDate
+            } else {
+                cell.textLabel?.text = "Can't retrieve activity title"
+            }
+        })
+        
         
         return cell
     }
