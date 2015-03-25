@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		695E43D51ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E43D41ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift */; };
+		699423E11A9A2CE30079AB5C /* AttendanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699423E01A9A2CE30079AB5C /* AttendanceTableViewController.swift */; };
+		699423E51ABC6CF30079AB5C /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699423E41ABC6CF30079AB5C /* Student.swift */; };
+		699423E71ABC933F0079AB5C /* StudentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699423E61ABC933F0079AB5C /* StudentListTableViewController.swift */; };
+		69CADFCA1A86A7F300C9C1B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFC91A86A7F300C9C1B6 /* AppDelegate.swift */; };
+		69CADFCC1A86A7F300C9C1B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFCB1A86A7F300C9C1B6 /* ViewController.swift */; };
+		69CADFCF1A86A7F300C9C1B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CADFCD1A86A7F300C9C1B6 /* Main.storyboard */; };
+		69CADFD11A86A7F300C9C1B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CADFD01A86A7F300C9C1B6 /* Images.xcassets */; };
+		69CADFD41A86A7F300C9C1B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69CADFD21A86A7F300C9C1B6 /* LaunchScreen.xib */; };
+		69CADFE01A86A7F400C9C1B6 /* Dorm_Activity_Tracker_AdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFDF1A86A7F400C9C1B6 /* Dorm_Activity_Tracker_AdminTests.swift */; };
+		69CADFEA1A86A94E00C9C1B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFE91A86A94E00C9C1B6 /* HomeViewController.swift */; };
+		69CADFFA1A86AB0600C9C1B6 /* BAAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFED1A86AB0600C9C1B6 /* BAAClient.m */; };
+		69CADFFB1A86AB0600C9C1B6 /* BAAFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFEF1A86AB0600C9C1B6 /* BAAFile.m */; };
+		69CADFFC1A86AB0600C9C1B6 /* BAAGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFF11A86AB0600C9C1B6 /* BAAGlobals.m */; };
+		69CADFFD1A86AB0600C9C1B6 /* BAAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFF31A86AB0600C9C1B6 /* BAAMutableURLRequest.m */; };
+		69CADFFE1A86AB0600C9C1B6 /* BAAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFF51A86AB0600C9C1B6 /* BAAObject.m */; };
+		69CADFFF1A86AB0600C9C1B6 /* BaasBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFF71A86AB0600C9C1B6 /* BaasBox.m */; };
+		69CAE0001A86AB0600C9C1B6 /* BAAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFF91A86AB0600C9C1B6 /* BAAUser.m */; };
+		69CAE0031A86AE9F00C9C1B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAE0021A86AE9F00C9C1B6 /* LoginViewController.swift */; };
+		69CAE0051A86BF0300C9C1B6 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAE0041A86BF0300C9C1B6 /* AddActivityViewController.swift */; };
+		69CAE0071A86C2E100C9C1B6 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAE0061A86C2E100C9C1B6 /* Activity.swift */; };
+		69CAE0091A8A75D300C9C1B6 /* ActivtyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAE0081A8A75D300C9C1B6 /* ActivtyListTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69CADFDA1A86A7F400C9C1B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69CADFBC1A86A7F300C9C1B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69CADFC31A86A7F300C9C1B6;
+			remoteInfo = "Dorm Activity Tracker Admin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		695E43D41ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentActivitiesCompletedTableViewController.swift; sourceTree = "<group>"; };
+		699423E01A9A2CE30079AB5C /* AttendanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewController.swift; sourceTree = "<group>"; };
+		699423E41ABC6CF30079AB5C /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		699423E61ABC933F0079AB5C /* StudentListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentListTableViewController.swift; sourceTree = "<group>"; };
+		69CADFC41A86A7F300C9C1B6 /* Dorm Activity Tracker Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dorm Activity Tracker Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CADFC81A86A7F300C9C1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69CADFC91A86A7F300C9C1B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69CADFCB1A86A7F300C9C1B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69CADFCE1A86A7F300C9C1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69CADFD01A86A7F300C9C1B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69CADFD31A86A7F300C9C1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		69CADFD91A86A7F400C9C1B6 /* Dorm Activity Tracker AdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dorm Activity Tracker AdminTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CADFDE1A86A7F400C9C1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69CADFDF1A86A7F400C9C1B6 /* Dorm_Activity_Tracker_AdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dorm_Activity_Tracker_AdminTests.swift; sourceTree = "<group>"; };
+		69CADFE91A86A94E00C9C1B6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		69CADFEB1A86AB0500C9C1B6 /* Dorm Activity Tracker Admin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dorm Activity Tracker Admin-Bridging-Header.h"; sourceTree = "<group>"; };
+		69CADFEC1A86AB0600C9C1B6 /* BAAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAClient.h; sourceTree = "<group>"; };
+		69CADFED1A86AB0600C9C1B6 /* BAAClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAClient.m; sourceTree = "<group>"; };
+		69CADFEE1A86AB0600C9C1B6 /* BAAFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAFile.h; sourceTree = "<group>"; };
+		69CADFEF1A86AB0600C9C1B6 /* BAAFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAFile.m; sourceTree = "<group>"; };
+		69CADFF01A86AB0600C9C1B6 /* BAAGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAGlobals.h; sourceTree = "<group>"; };
+		69CADFF11A86AB0600C9C1B6 /* BAAGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAGlobals.m; sourceTree = "<group>"; };
+		69CADFF21A86AB0600C9C1B6 /* BAAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAMutableURLRequest.h; sourceTree = "<group>"; };
+		69CADFF31A86AB0600C9C1B6 /* BAAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAMutableURLRequest.m; sourceTree = "<group>"; };
+		69CADFF41A86AB0600C9C1B6 /* BAAObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAObject.h; sourceTree = "<group>"; };
+		69CADFF51A86AB0600C9C1B6 /* BAAObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAObject.m; sourceTree = "<group>"; };
+		69CADFF61A86AB0600C9C1B6 /* BaasBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaasBox.h; sourceTree = "<group>"; };
+		69CADFF71A86AB0600C9C1B6 /* BaasBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaasBox.m; sourceTree = "<group>"; };
+		69CADFF81A86AB0600C9C1B6 /* BAAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAUser.h; sourceTree = "<group>"; };
+		69CADFF91A86AB0600C9C1B6 /* BAAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAUser.m; sourceTree = "<group>"; };
+		69CAE0021A86AE9F00C9C1B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		69CAE0041A86BF0300C9C1B6 /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
+		69CAE0061A86C2E100C9C1B6 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		69CAE0081A8A75D300C9C1B6 /* ActivtyListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivtyListTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69CADFC11A86A7F300C9C1B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CADFD61A86A7F400C9C1B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69CADFBB1A86A7F300C9C1B6 = {
+			isa = PBXGroup;
+			children = (
+				69CADFC61A86A7F300C9C1B6 /* Dorm Activity Tracker Admin */,
+				69CADFDC1A86A7F400C9C1B6 /* Dorm Activity Tracker AdminTests */,
+				69CADFC51A86A7F300C9C1B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69CADFC51A86A7F300C9C1B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69CADFC41A86A7F300C9C1B6 /* Dorm Activity Tracker Admin.app */,
+				69CADFD91A86A7F400C9C1B6 /* Dorm Activity Tracker AdminTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69CADFC61A86A7F300C9C1B6 /* Dorm Activity Tracker Admin */ = {
+			isa = PBXGroup;
+			children = (
+				69CAE0011A86AB1800C9C1B6 /* BaasBox Files */,
+				69CADFC91A86A7F300C9C1B6 /* AppDelegate.swift */,
+				69CADFCB1A86A7F300C9C1B6 /* ViewController.swift */,
+				69CADFCD1A86A7F300C9C1B6 /* Main.storyboard */,
+				69CAE00A1A8A75F100C9C1B6 /* View Controllers */,
+				69CAE0061A86C2E100C9C1B6 /* Activity.swift */,
+				699423E41ABC6CF30079AB5C /* Student.swift */,
+				69CADFD01A86A7F300C9C1B6 /* Images.xcassets */,
+				69CADFD21A86A7F300C9C1B6 /* LaunchScreen.xib */,
+				69CADFC71A86A7F300C9C1B6 /* Supporting Files */,
+				69CADFEB1A86AB0500C9C1B6 /* Dorm Activity Tracker Admin-Bridging-Header.h */,
+			);
+			path = "Dorm Activity Tracker Admin";
+			sourceTree = "<group>";
+		};
+		69CADFC71A86A7F300C9C1B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69CADFC81A86A7F300C9C1B6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69CADFDC1A86A7F400C9C1B6 /* Dorm Activity Tracker AdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				69CADFDF1A86A7F400C9C1B6 /* Dorm_Activity_Tracker_AdminTests.swift */,
+				69CADFDD1A86A7F400C9C1B6 /* Supporting Files */,
+			);
+			path = "Dorm Activity Tracker AdminTests";
+			sourceTree = "<group>";
+		};
+		69CADFDD1A86A7F400C9C1B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69CADFDE1A86A7F400C9C1B6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69CAE0011A86AB1800C9C1B6 /* BaasBox Files */ = {
+			isa = PBXGroup;
+			children = (
+				69CADFEC1A86AB0600C9C1B6 /* BAAClient.h */,
+				69CADFED1A86AB0600C9C1B6 /* BAAClient.m */,
+				69CADFEE1A86AB0600C9C1B6 /* BAAFile.h */,
+				69CADFEF1A86AB0600C9C1B6 /* BAAFile.m */,
+				69CADFF01A86AB0600C9C1B6 /* BAAGlobals.h */,
+				69CADFF11A86AB0600C9C1B6 /* BAAGlobals.m */,
+				69CADFF21A86AB0600C9C1B6 /* BAAMutableURLRequest.h */,
+				69CADFF31A86AB0600C9C1B6 /* BAAMutableURLRequest.m */,
+				69CADFF41A86AB0600C9C1B6 /* BAAObject.h */,
+				69CADFF51A86AB0600C9C1B6 /* BAAObject.m */,
+				69CADFF61A86AB0600C9C1B6 /* BaasBox.h */,
+				69CADFF71A86AB0600C9C1B6 /* BaasBox.m */,
+				69CADFF81A86AB0600C9C1B6 /* BAAUser.h */,
+				69CADFF91A86AB0600C9C1B6 /* BAAUser.m */,
+			);
+			name = "BaasBox Files";
+			sourceTree = "<group>";
+		};
+		69CAE00A1A8A75F100C9C1B6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				695E43D41ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift */,
+				699423E61ABC933F0079AB5C /* StudentListTableViewController.swift */,
+				699423E01A9A2CE30079AB5C /* AttendanceTableViewController.swift */,
+				69CAE0081A8A75D300C9C1B6 /* ActivtyListTableViewController.swift */,
+				69CAE0041A86BF0300C9C1B6 /* AddActivityViewController.swift */,
+				69CAE0021A86AE9F00C9C1B6 /* LoginViewController.swift */,
+				69CADFE91A86A94E00C9C1B6 /* HomeViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69CADFC31A86A7F300C9C1B6 /* Dorm Activity Tracker Admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CADFE31A86A7F400C9C1B6 /* Build configuration list for PBXNativeTarget "Dorm Activity Tracker Admin" */;
+			buildPhases = (
+				69CADFC01A86A7F300C9C1B6 /* Sources */,
+				69CADFC11A86A7F300C9C1B6 /* Frameworks */,
+				69CADFC21A86A7F300C9C1B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dorm Activity Tracker Admin";
+			productName = "Dorm Activity Tracker Admin";
+			productReference = 69CADFC41A86A7F300C9C1B6 /* Dorm Activity Tracker Admin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69CADFD81A86A7F400C9C1B6 /* Dorm Activity Tracker AdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CADFE61A86A7F400C9C1B6 /* Build configuration list for PBXNativeTarget "Dorm Activity Tracker AdminTests" */;
+			buildPhases = (
+				69CADFD51A86A7F400C9C1B6 /* Sources */,
+				69CADFD61A86A7F400C9C1B6 /* Frameworks */,
+				69CADFD71A86A7F400C9C1B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CADFDB1A86A7F400C9C1B6 /* PBXTargetDependency */,
+			);
+			name = "Dorm Activity Tracker AdminTests";
+			productName = "Dorm Activity Tracker AdminTests";
+			productReference = 69CADFD91A86A7F400C9C1B6 /* Dorm Activity Tracker AdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69CADFBC1A86A7F300C9C1B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Brian Wilkinson";
+				TargetAttributes = {
+					69CADFC31A86A7F300C9C1B6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					69CADFD81A86A7F400C9C1B6 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 69CADFC31A86A7F300C9C1B6;
+					};
+				};
+			};
+			buildConfigurationList = 69CADFBF1A86A7F300C9C1B6 /* Build configuration list for PBXProject "Dorm Activity Tracker Admin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69CADFBB1A86A7F300C9C1B6;
+			productRefGroup = 69CADFC51A86A7F300C9C1B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69CADFC31A86A7F300C9C1B6 /* Dorm Activity Tracker Admin */,
+				69CADFD81A86A7F400C9C1B6 /* Dorm Activity Tracker AdminTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69CADFC21A86A7F300C9C1B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CADFCF1A86A7F300C9C1B6 /* Main.storyboard in Resources */,
+				69CADFD41A86A7F300C9C1B6 /* LaunchScreen.xib in Resources */,
+				69CADFD11A86A7F300C9C1B6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CADFD71A86A7F400C9C1B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69CADFC01A86A7F300C9C1B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699423E11A9A2CE30079AB5C /* AttendanceTableViewController.swift in Sources */,
+				69CADFCC1A86A7F300C9C1B6 /* ViewController.swift in Sources */,
+				695E43D51ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift in Sources */,
+				69CADFFE1A86AB0600C9C1B6 /* BAAObject.m in Sources */,
+				69CADFFA1A86AB0600C9C1B6 /* BAAClient.m in Sources */,
+				69CAE0051A86BF0300C9C1B6 /* AddActivityViewController.swift in Sources */,
+				69CADFFB1A86AB0600C9C1B6 /* BAAFile.m in Sources */,
+				69CADFFC1A86AB0600C9C1B6 /* BAAGlobals.m in Sources */,
+				69CAE0001A86AB0600C9C1B6 /* BAAUser.m in Sources */,
+				69CADFCA1A86A7F300C9C1B6 /* AppDelegate.swift in Sources */,
+				699423E71ABC933F0079AB5C /* StudentListTableViewController.swift in Sources */,
+				69CADFFD1A86AB0600C9C1B6 /* BAAMutableURLRequest.m in Sources */,
+				69CADFFF1A86AB0600C9C1B6 /* BaasBox.m in Sources */,
+				69CAE0091A8A75D300C9C1B6 /* ActivtyListTableViewController.swift in Sources */,
+				69CADFEA1A86A94E00C9C1B6 /* HomeViewController.swift in Sources */,
+				69CAE0071A86C2E100C9C1B6 /* Activity.swift in Sources */,
+				69CAE0031A86AE9F00C9C1B6 /* LoginViewController.swift in Sources */,
+				699423E51ABC6CF30079AB5C /* Student.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CADFD51A86A7F400C9C1B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CADFE01A86A7F400C9C1B6 /* Dorm_Activity_Tracker_AdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69CADFDB1A86A7F400C9C1B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69CADFC31A86A7F300C9C1B6 /* Dorm Activity Tracker Admin */;
+			targetProxy = 69CADFDA1A86A7F400C9C1B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69CADFCD1A86A7F300C9C1B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69CADFCE1A86A7F300C9C1B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69CADFD21A86A7F300C9C1B6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69CADFD31A86A7F300C9C1B6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69CADFE11A86A7F400C9C1B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		69CADFE21A86A7F400C9C1B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69CADFE41A86A7F400C9C1B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Dorm Activity Tracker Admin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dorm Activity Tracker Admin/Dorm Activity Tracker Admin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69CADFE51A86A7F400C9C1B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Dorm Activity Tracker Admin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dorm Activity Tracker Admin/Dorm Activity Tracker Admin-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		69CADFE71A86A7F400C9C1B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dorm Activity Tracker AdminTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dorm Activity Tracker Admin.app/Dorm Activity Tracker Admin";
+			};
+			name = Debug;
+		};
+		69CADFE81A86A7F400C9C1B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dorm Activity Tracker AdminTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dorm Activity Tracker Admin.app/Dorm Activity Tracker Admin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69CADFBF1A86A7F300C9C1B6 /* Build configuration list for PBXProject "Dorm Activity Tracker Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CADFE11A86A7F400C9C1B6 /* Debug */,
+				69CADFE21A86A7F400C9C1B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CADFE31A86A7F400C9C1B6 /* Build configuration list for PBXNativeTarget "Dorm Activity Tracker Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CADFE41A86A7F400C9C1B6 /* Debug */,
+				69CADFE51A86A7F400C9C1B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CADFE61A86A7F400C9C1B6 /* Build configuration list for PBXNativeTarget "Dorm Activity Tracker AdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CADFE71A86A7F400C9C1B6 /* Debug */,
+				69CADFE81A86A7F400C9C1B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69CADFBC1A86A7F300C9C1B6 /* Project object */;
+}
