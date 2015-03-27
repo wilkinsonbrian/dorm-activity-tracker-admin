@@ -61,7 +61,7 @@ class AddActivityViewController: UIViewController {
         let calendar = NSCalendar.currentCalendar()
         let startingTime = calendar.components((.HourCalendarUnit | .MinuteCalendarUnit), fromDate: activityStartTime.date)
         let endingTime = calendar.components((.HourCalendarUnit | .MinuteCalendarUnit), fromDate: activityEndTime.date)
- 
+        
         newActivity.name = activityName.text
         newActivity.maximum = maxParticipants.text.toInt()!
         

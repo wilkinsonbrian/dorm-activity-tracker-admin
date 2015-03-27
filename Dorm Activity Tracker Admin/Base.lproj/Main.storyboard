@@ -419,7 +419,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Pc-j1-VFM">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="9Pc-j1-VFM">
                                 <rect key="frame" x="16" y="384" width="278" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445037742.99128503">
                                     <!--2015-02-07 21:35:42 +0000-->
@@ -431,13 +431,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="rF4-YW-9PP">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="rF4-YW-9PP">
                                 <rect key="frame" x="632" y="384" width="265" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445039126.68558502">
                                     <!--2015-02-07 21:58:46 +0000-->
                                 </date>
                             </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="seQ-ky-cPx">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="seQ-ky-cPx">
                                 <rect key="frame" x="319" y="384" width="266" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445207836.90229601">
                                     <!--2015-02-09 20:50:36 +0000-->
