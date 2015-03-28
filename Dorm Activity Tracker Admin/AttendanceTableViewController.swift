@@ -72,20 +72,28 @@ class AttendanceTableViewController: UITableViewController {
         return cell
     }
     
+    /* Called when a row is tapped. When attendance is taken, dorm faculty will tap the row. A checkmark will appear
+    to indicate the student is present. The activity is then added to an array of activities the student has completed.
+    If the row is tapped again, the checkmark is removed and that activity is deleted from the array of completed activities
+    for that student
+    */
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var cell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        
-        let parameters = ["where": "fullName='\(students[indexPath.row])'"]
-        Student.getObjectsWithParams(parameters, {(student: [AnyObject]!, error:NSError!) -> () in
+
+        Student.getObjectWithId(students[indexPath.row], {(student:AnyObject!, error:NSError!) -> () in
             
-            var studentRecord = student[0] as Student
+            var studentRecord = student as Student
             var currentUserActvityList:[String] = []
             var originalActvityList:[String] = []
             originalActvityList = studentRecord.activities
             
             if cell.accessoryType == UITableViewCellAccessoryType.Checkmark {
                 
-                currentUserActvityList.removeLast()
+                for var x = 0; x < studentRecord.activities.count; ++x {
+                    if studentRecord.activities[x] == self.activity.objectId {
+                        studentRecord.activities.removeAtIndex(x)
+                    }
+                }
                 cell.accessoryType = UITableViewCellAccessoryType.None
                 
             } else {
