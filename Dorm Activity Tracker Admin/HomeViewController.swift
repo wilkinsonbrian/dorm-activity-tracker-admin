@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func addNewActivity(sender: UIButton) {
-        navigationController?.performSegueWithIdentifier("addNewActivity", sender: nil)
+        navigationController?.performSegueWithIdentifier("addANewActivity", sender: nil)
     }
     
     @IBAction func viewActivities(sender: UIButton) {

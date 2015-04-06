@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		695E43D51ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E43D41ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift */; };
+		69878CA11ACEE5E50079C547 /* AddANewActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69878CA01ACEE5E50079C547 /* AddANewActivityTableViewController.swift */; };
 		699423E11A9A2CE30079AB5C /* AttendanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699423E01A9A2CE30079AB5C /* AttendanceTableViewController.swift */; };
 		699423E51ABC6CF30079AB5C /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699423E41ABC6CF30079AB5C /* Student.swift */; };
 		699423E71ABC933F0079AB5C /* StudentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699423E61ABC933F0079AB5C /* StudentListTableViewController.swift */; };
@@ -26,7 +27,6 @@
 		69CADFFF1A86AB0600C9C1B6 /* BaasBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFF71A86AB0600C9C1B6 /* BaasBox.m */; };
 		69CAE0001A86AB0600C9C1B6 /* BAAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CADFF91A86AB0600C9C1B6 /* BAAUser.m */; };
 		69CAE0031A86AE9F00C9C1B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAE0021A86AE9F00C9C1B6 /* LoginViewController.swift */; };
-		69CAE0051A86BF0300C9C1B6 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAE0041A86BF0300C9C1B6 /* AddActivityViewController.swift */; };
 		69CAE0071A86C2E100C9C1B6 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAE0061A86C2E100C9C1B6 /* Activity.swift */; };
 		69CAE0091A8A75D300C9C1B6 /* ActivtyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAE0081A8A75D300C9C1B6 /* ActivtyListTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		695E43D41ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentActivitiesCompletedTableViewController.swift; sourceTree = "<group>"; };
+		69878CA01ACEE5E50079C547 /* AddANewActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddANewActivityTableViewController.swift; sourceTree = "<group>"; };
 		699423E01A9A2CE30079AB5C /* AttendanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewController.swift; sourceTree = "<group>"; };
 		699423E41ABC6CF30079AB5C /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		699423E61ABC933F0079AB5C /* StudentListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentListTableViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		69CADFF81A86AB0600C9C1B6 /* BAAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAUser.h; sourceTree = "<group>"; };
 		69CADFF91A86AB0600C9C1B6 /* BAAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAUser.m; sourceTree = "<group>"; };
 		69CAE0021A86AE9F00C9C1B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		69CAE0041A86BF0300C9C1B6 /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		69CAE0061A86C2E100C9C1B6 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		69CAE0081A8A75D300C9C1B6 /* ActivtyListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivtyListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,11 +181,11 @@
 		69CAE00A1A8A75F100C9C1B6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				69878CA01ACEE5E50079C547 /* AddANewActivityTableViewController.swift */,
 				695E43D41ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift */,
 				699423E61ABC933F0079AB5C /* StudentListTableViewController.swift */,
 				699423E01A9A2CE30079AB5C /* AttendanceTableViewController.swift */,
 				69CAE0081A8A75D300C9C1B6 /* ActivtyListTableViewController.swift */,
-				69CAE0041A86BF0300C9C1B6 /* AddActivityViewController.swift */,
 				69CAE0021A86AE9F00C9C1B6 /* LoginViewController.swift */,
 				69CADFE91A86A94E00C9C1B6 /* HomeViewController.swift */,
 			);
@@ -297,7 +297,6 @@
 				695E43D51ABEDEDF0036E74C /* StudentActivitiesCompletedTableViewController.swift in Sources */,
 				69CADFFE1A86AB0600C9C1B6 /* BAAObject.m in Sources */,
 				69CADFFA1A86AB0600C9C1B6 /* BAAClient.m in Sources */,
-				69CAE0051A86BF0300C9C1B6 /* AddActivityViewController.swift in Sources */,
 				69CADFFB1A86AB0600C9C1B6 /* BAAFile.m in Sources */,
 				69CADFFC1A86AB0600C9C1B6 /* BAAGlobals.m in Sources */,
 				69CAE0001A86AB0600C9C1B6 /* BAAUser.m in Sources */,
@@ -305,6 +304,7 @@
 				699423E71ABC933F0079AB5C /* StudentListTableViewController.swift in Sources */,
 				69CADFFD1A86AB0600C9C1B6 /* BAAMutableURLRequest.m in Sources */,
 				69CADFFF1A86AB0600C9C1B6 /* BaasBox.m in Sources */,
+				69878CA11ACEE5E50079C547 /* AddANewActivityTableViewController.swift in Sources */,
 				69CAE0091A8A75D300C9C1B6 /* ActivtyListTableViewController.swift in Sources */,
 				69CADFEA1A86A94E00C9C1B6 /* HomeViewController.swift in Sources */,
 				69CAE0071A86C2E100C9C1B6 /* Activity.swift in Sources */,

@@ -10,8 +10,6 @@ import UIKit
 
 class AttendanceTableViewController: UITableViewController {
     
-    var students: [String]!
-    var BAStudents: [BAAUser] = []
     var activity: Activity!
 
     override func viewDidLoad() {
@@ -45,16 +43,15 @@ class AttendanceTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return students.count
+        return activity.participantsSignedUp.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("studentAttendance", forIndexPath: indexPath) as UITableViewCell
         
         var currentStudent: Student!
-        var currentActivityID = activity.objectId
-        
-        Student.getObjectWithId(self.students[indexPath.row], {(student:AnyObject!, error:NSError!) -> () in
+      
+        Student.getObjectWithId(self.activity.participantsSignedUp[indexPath.row], {(student:AnyObject!, error:NSError!) -> () in
             if error == nil {
                 currentStudent = student as Student
                 cell.textLabel?.text = currentStudent.fullName
@@ -63,7 +60,7 @@ class AttendanceTableViewController: UITableViewController {
             }
             
             for activityAttended in currentStudent.activities {
-                if currentActivityID == activityAttended {
+                if self.activity.objectId == activityAttended {
                     cell.accessoryType = UITableViewCellAccessoryType.Checkmark
                 }
             }
@@ -80,12 +77,9 @@ class AttendanceTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var cell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
 
-        Student.getObjectWithId(students[indexPath.row], {(student:AnyObject!, error:NSError!) -> () in
+        Student.getObjectWithId(activity.participantsSignedUp[indexPath.row], {(student:AnyObject!, error:NSError!) -> () in
             
             var studentRecord = student as Student
-            var currentUserActvityList:[String] = []
-            var originalActvityList:[String] = []
-            originalActvityList = studentRecord.activities
             
             if cell.accessoryType == UITableViewCellAccessoryType.Checkmark {
                 
@@ -97,11 +91,9 @@ class AttendanceTableViewController: UITableViewController {
                 cell.accessoryType = UITableViewCellAccessoryType.None
                 
             } else {
-                currentUserActvityList.append(self.activity.objectId)
+                studentRecord.activities.append(self.activity.objectId)
                 cell.accessoryType = UITableViewCellAccessoryType.Checkmark
             }
-            
-            studentRecord.activities = currentUserActvityList
             
             studentRecord.saveObjectWithCompletion({(object: AnyObject!, error: NSError!) -> () in
                 if (error == nil) {

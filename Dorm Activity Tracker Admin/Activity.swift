@@ -12,7 +12,7 @@ class Activity: BAAObject {
     var name: String
     var maximum: Int
     var activityDescription: String
-    var eventDate: String
+    //var eventDate: String
     var startTime: String
     var endTime: String
     var participantsSignedUp: [String] = []
@@ -26,7 +26,7 @@ class Activity: BAAObject {
         
         self.activityDescription = dictionary["activityDescription"]! as String
         
-        self.eventDate = dictionary["eventDate"]! as String
+        //self.eventDate = dictionary["eventDate"]! as String
         self.startTime = dictionary["startTime"]! as String
         self.endTime = dictionary["endTime"]! as String
         

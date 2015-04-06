@@ -1,19 +1,31 @@
 //
-//  StudentActivitiesCompletedTableViewController.swift
+//  AddANewActivityTableViewController.swift
 //  Dorm Activity Tracker Admin
 //
-//  Created by Brian Wilkinson on 3/22/15.
+//  Created by Brian Wilkinson on 4/3/15.
 //  Copyright (c) 2015 Brian Wilkinson. All rights reserved.
 //
 
 import UIKit
 
-class StudentActivitiesCompletedTableViewController: UITableViewController {
+class AddANewActivityTableViewController: UITableViewController {
 
-    var studentActvities: [String]!
+    @IBOutlet weak var activityName: UITextField!
     
+    @IBOutlet weak var activityDescription: UITextView!
+    
+    @IBOutlet weak var maxParticipants: UITextField!
+    
+    
+    @IBOutlet weak var activityStartTime: UIDatePicker!
+    
+    @IBOutlet weak var activityEndTime: UIDatePicker!
+    var newActivity: Activity!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        newActivity = Activity()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -27,36 +39,53 @@ class StudentActivitiesCompletedTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 1
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return studentActvities.count
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("showStudentActivities", forIndexPath: indexPath) as UITableViewCell
+    @IBAction func saveNewActivity(sender: UIBarButtonItem) {
+        let dateFormatter = NSDateFormatter()
         
-        Activity.getObjectWithId(self.studentActvities[indexPath.row], {(activity:AnyObject!, error:NSError!) -> () in
-            if error == nil {
-                var currentActivity = activity as Activity
-                cell.textLabel?.text = currentActivity.name
-                cell.detailTextLabel?.text = currentActivity.startTime
+        dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
+        dateFormatter.timeStyle = NSDateFormatterStyle.MediumStyle
+        //dateFormatter.dateFormat = "MMM d, yyyy"
+        
+        newActivity.name = activityName.text
+        newActivity.maximum = maxParticipants.text.toInt()!
+        
+        newActivity.activityDescription = activityDescription.text
+        
+        newActivity.startTime = dateFormatter.stringFromDate(activityStartTime.date)
+        
+        newActivity.endTime = dateFormatter.stringFromDate(activityEndTime.date)
+        
+        newActivity.saveObjectWithCompletion({(object:AnyObject!, error: NSError!) -> () in
+            if (error == nil) {
+                println(self.newActivity.startTime)
+                println("Activity added successfully")
+                self.dismissViewControllerAnimated(true, completion: nil)
             } else {
-                cell.textLabel?.text = "Can't retrieve activity title"
+                println("There was a problem adding this activity")
             }
         })
+    }
+    
+    
+    @IBAction func returnToMainMenu(sender: AnyObject) {
         
+        dismissViewControllerAnimated(true, completion: nil)
         
+    }
+}
+
+
+    
+    /*
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+
+        // Configure the cell...
+
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -103,4 +132,3 @@ class StudentActivitiesCompletedTableViewController: UITableViewController {
     }
     */
 
-}

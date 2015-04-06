@@ -69,9 +69,22 @@ class ActivtyListTableViewController: UITableViewController {
         
         currentActivity = self.activities[indexPath.row]
         cell.textLabel?.text = currentActivity.name
-        cell.detailTextLabel?.text = currentActivity.eventDate
+        cell.detailTextLabel?.text = currentActivity.startTime
         
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue,
+        sender: AnyObject?) {
+            
+            if segue.identifier == "takeAttendance" {
+                let detailViewController = segue.destinationViewController
+                    as AttendanceTableViewController
+                
+                let myIndexPath = self.tableView.indexPathForSelectedRow()
+                let row = myIndexPath?.row
+                detailViewController.activity = activities[row!]
+            }
     }
 
     /*
@@ -109,18 +122,5 @@ class ActivtyListTableViewController: UITableViewController {
     }
     */
 
-    override func prepareForSegue(segue: UIStoryboardSegue,
-        sender: AnyObject?) {
-            
-            if segue.identifier == "takeAttendance" {
-                let detailViewController = segue.destinationViewController
-                    as AttendanceTableViewController
-                
-                let myIndexPath = self.tableView.indexPathForSelectedRow()
-                let row = myIndexPath?.row
-                detailViewController.students = activities[row!].participantsSignedUp
-                detailViewController.activity = currentActivity
-            }
-    }
 
 }
